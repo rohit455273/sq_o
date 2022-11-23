@@ -1,8 +1,12 @@
 app <- ShinyDriver$new("../../")
 app$snapshotInit("mytest")
 
+app$setInputs(size = 12)
+app$setInputs(size = 11)
+app$setInputs(size = 15)
 app$snapshot()
-
-app$setInputs(`examplemodule1-button` = "click")
-app$setInputs(`examplemodule1-button` = "click")
+app$setInputs(size = 8)
+app$setInputs(size = 16)
+app$snapshot()
+app$setInputs(size = 9)
 app$snapshot()
